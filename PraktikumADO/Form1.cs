@@ -15,6 +15,12 @@ namespace PraktikumADO
     {
         MySqlConnection conn;
         MySqlCommand cmd;
+
+        private void koneksi()
+        {
+            conn = new MySqlConnection("Server = localhost; database = DBAkademikADO; UID = root; " +
+            "Password = 21914113");
+        }
         public Form1()
         {
             InitializeComponent();
