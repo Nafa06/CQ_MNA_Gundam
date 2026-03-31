@@ -60,5 +60,16 @@ namespace PraktikumADO
             txtHasil.Text = jumlah.ToString();
             conn.Close();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            koneksi();
+            conn.Open();
+            string query = "update mahasiswa set Alamat='Yogyakarta' where NIM='23110100001'";
+            cmd = new MySqlCommand(query, conn);
+            int hasil = cmd.ExecuteNonQuery();
+            MessageBox.Show("Jumlah baris terpengaruh: " + hasil);
+            conn.Close();
+        }
     }
 }
