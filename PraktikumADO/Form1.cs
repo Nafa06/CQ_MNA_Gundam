@@ -80,5 +80,14 @@ namespace PraktikumADO
             txtHasil.Text = cmd.ExecuteScalar().ToString();
             conn.Close();
         }
+
+        private void btnUpdateSks_Click(object sender, EventArgs e)
+        {
+            koneksi();
+            conn.Open();
+            cmd = new MySqlCommand("UPDATE MataKuliah SET SKS=4 WHERE KodeMK='IF210101'", conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
     }
 }
