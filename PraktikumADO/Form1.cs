@@ -30,5 +30,13 @@ namespace PraktikumADO
         {
 
         }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            koneksi();
+            conn.Open();
+            MessageBox.Show("Koneksi ke Database Berhasil");
+            conn.Close();
+        }
     }
 }
