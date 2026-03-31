@@ -36,6 +36,7 @@
             this.txtHasil = new System.Windows.Forms.TextBox();
             this.btnHitungDosen = new System.Windows.Forms.Button();
             this.btnUpdateSks = new System.Windows.Forms.Button();
+            this.btnInsertProdi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -96,7 +97,7 @@
             // 
             // btnHitungDosen
             // 
-            this.btnHitungDosen.Location = new System.Drawing.Point(400, 184);
+            this.btnHitungDosen.Location = new System.Drawing.Point(314, 184);
             this.btnHitungDosen.Name = "btnHitungDosen";
             this.btnHitungDosen.Size = new System.Drawing.Size(100, 23);
             this.btnHitungDosen.TabIndex = 3;
@@ -106,7 +107,7 @@
             // 
             // btnUpdateSks
             // 
-            this.btnUpdateSks.Location = new System.Drawing.Point(506, 184);
+            this.btnUpdateSks.Location = new System.Drawing.Point(420, 184);
             this.btnUpdateSks.Name = "btnUpdateSks";
             this.btnUpdateSks.Size = new System.Drawing.Size(95, 23);
             this.btnUpdateSks.TabIndex = 4;
@@ -114,11 +115,22 @@
             this.btnUpdateSks.UseVisualStyleBackColor = true;
             this.btnUpdateSks.Click += new System.EventHandler(this.btnUpdateSks_Click);
             // 
+            // btnInsertProdi
+            // 
+            this.btnInsertProdi.Location = new System.Drawing.Point(521, 184);
+            this.btnInsertProdi.Name = "btnInsertProdi";
+            this.btnInsertProdi.Size = new System.Drawing.Size(112, 23);
+            this.btnInsertProdi.TabIndex = 5;
+            this.btnInsertProdi.Text = "Tambah Prodi";
+            this.btnInsertProdi.UseVisualStyleBackColor = true;
+            this.btnInsertProdi.Click += new System.EventHandler(this.btnInsertProdi_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1025, 450);
+            this.Controls.Add(this.btnInsertProdi);
             this.Controls.Add(this.btnUpdateSks);
             this.Controls.Add(this.btnHitungDosen);
             this.Controls.Add(this.txtHasil);
@@ -145,6 +157,7 @@
         private System.Windows.Forms.TextBox txtHasil;
         private System.Windows.Forms.Button btnHitungDosen;
         private System.Windows.Forms.Button btnUpdateSks;
+        private System.Windows.Forms.Button btnInsertProdi;
     }
 }
 

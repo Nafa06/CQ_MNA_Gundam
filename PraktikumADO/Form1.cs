@@ -89,5 +89,14 @@ namespace PraktikumADO
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+
+        private void btnInsertProdi_Click(object sender, EventArgs e)
+        {
+            koneksi();
+            conn.Open();
+            cmd = new MySqlCommand("INSERT INTO ProgramStudi VALUES ('MI01','Manajemen Informatika')", conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
     }
 }
