@@ -54,6 +54,7 @@
             this.btnHitungMhs.TabIndex = 0;
             this.btnHitungMhs.Text = "Hitung Mahasiswa";
             this.btnHitungMhs.UseVisualStyleBackColor = true;
+            this.btnHitungMhs.Click += new System.EventHandler(this.btnHitungMhs_Click);
             // 
             // btnHitungMK
             // 
