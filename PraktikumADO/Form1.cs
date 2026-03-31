@@ -71,5 +71,14 @@ namespace PraktikumADO
             MessageBox.Show("Jumlah baris terpengaruh: " + hasil);
             conn.Close();
         }
+
+        private void btnHitungDosen_Click(object sender, EventArgs e)
+        {
+            koneksi();
+            conn.Open();
+            cmd = new MySqlCommand("SELECT COUNT(*) FROM Dosen", conn);
+            txtHasil.Text = cmd.ExecuteScalar().ToString();
+            conn.Close();
+        }
     }
 }
