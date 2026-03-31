@@ -49,5 +49,16 @@ namespace PraktikumADO
             txtHasil.Text = jumlah.ToString();
             conn.Close();
         }
+
+        private void btnHitungMK_Click(object sender, EventArgs e)
+        {
+            koneksi();
+            conn.Open();
+            string query = "select count(*) from MataKuliah";
+            cmd = new MySqlCommand(query, conn);
+            int jumlah = Convert.ToInt32(cmd.ExecuteScalar());
+            txtHasil.Text = jumlah.ToString();
+            conn.Close();
+        }
     }
 }
